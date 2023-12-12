@@ -1,0 +1,18 @@
+.cliente{
+ color:blue
+}
+.administrador{
+color:green;
+}
+table{
+    width: 80%;
+    border-collapse:separate;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+th, td{
+    border: 1px solid #4e4e4e;
+    
+    text-align: center;
+}

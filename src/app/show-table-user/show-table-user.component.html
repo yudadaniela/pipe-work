@@ -1,0 +1,23 @@
+<h1>Tabla Usuarios</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Rol</th>
+      <th>Fecha de inscripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let element of data"
+      [ngClass]="{
+        cliente: element.role === 'cliente',
+        administrador: element.role === 'administrador'
+      }"
+    >
+      <td>{{ element.name }}</td>
+      <td>{{ element.role }}</td>
+      <td>{{ element.date | randomDate | date : "short" }}</td>
+    </tr>
+  </tbody>
+</table>
